@@ -25,7 +25,7 @@ function Section3() {
     }} />
 
     <h3 className="section-title">Curate</h3>
-    <p className="section-description">Start advertising in native, Social-media Display, Rich media and CTV contents</p>
+    <p className="section-desbodycription">Start advertising in native, Social-media Display, Rich media and CTV contents</p>
     <p className="section-description"> Easy to use</p>
 
     <img src={logo11} className="App-logo" alt="Group75" />

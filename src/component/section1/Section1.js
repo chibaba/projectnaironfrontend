@@ -2,13 +2,13 @@ import React from "react";
 
 //import { Header } from '../Header'
 
-import "./section1.css";
+import "./Section1.css";
 
-import logo1 from "../../img/Group.png";
-import logo2 from "../../img/Group 49.png";
+import logo1 from "../../img/Group 67.png";
+import logo2 from "../../img/Group  49.jpeg";
 import logo3 from "../../img/Group 50.png";
 import logo4 from "../../img/Group 51.png";
-import logo5 from "../../img/Group 52.png";
+import logo5 from "../../img/Group 52.jpg";
 import logo6 from "../../img/Group 53.png";
 
 //import {logo1, logo2, logo3, logo4, logo5, logo6, logo7} from './img';

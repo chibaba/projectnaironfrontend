@@ -17,8 +17,8 @@ import "react-phone-input-2/lib/bootstrap.css";
 //import ReactPhoneInput from "react-phone-input-2";
 import DropdownExampleSearchDropdown from "./dropdown";
 import "../Design/SignIn.css";
-import googleicon from "../img/googleicon.png";
-import facebooklogo from "../img/alaajo-facebook.png";
+import googleicon from "../img/Group 53.png";
+import facebooklogo from "../img/Group 50.png";
 
 import { connect } from "react-redux";
 import { userActions } from "../_actions";

@@ -13,7 +13,9 @@ import { alertActions } from "./_actions";
 import { PrivateRoute } from "./_components";
 import { HomePage } from "./components/Homepage";
 import { connect } from "react-redux";
+
 import sign from "./components/SignUp2";
+import Landing from "./components/Landing";
 import log from "./components/login2";
 
 class App extends Component {
@@ -62,6 +64,7 @@ class App extends Component {
           <Switch>
             <PrivateRoute exact path="/" component={HomePage} />
             <Route path="/login" component={log} />
+            <Route path="/Landing" component={Landing} />
             <Route path="/signup" component={sign} />
             <Redirect from="*" to="/" />
           </Switch>

@@ -18,7 +18,7 @@ function Header() {
         <nav className="nav-menu-container">
           <ul className="nav-menu">
             <li>
-              <a href="#portfolio">Login</a>
+              <a href="/login">Login</a>
             </li>
             <li>
               <button variant="outline-info">Create account</button>{" "}

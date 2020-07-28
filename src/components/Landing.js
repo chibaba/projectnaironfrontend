@@ -10,12 +10,14 @@ import Section6 from "../component/section6/Section6";
 const Landing = () => {
   return (
     <div>
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <Section6 />
+      <ul>
+        <Section1 />
+        <Section2 />
+        <Section3 />
+        <Section4 />
+        <Section5 />
+        <Section6 />
+      </ul>
     </div>
   );
 };

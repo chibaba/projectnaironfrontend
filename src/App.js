@@ -15,8 +15,8 @@ import { HomePage } from "./components/Homepage";
 import { connect } from "react-redux";
 
 import sign from "./components/SignUp2";
-import Landing from "./components/Landing";
 import log from "./components/login2";
+import User from "./chineduSrc/Landing/users/pages/Users";
 
 class App extends Component {
   // state = {  }
@@ -64,7 +64,7 @@ class App extends Component {
           <Switch>
             <PrivateRoute exact path="/" component={HomePage} />
             <Route path="/login" component={log} />
-            <Route path="/Landing" component={Landing} />
+            <Route path="/User" component={User} />
             <Route path="/signup" component={sign} />
             <Redirect from="*" to="/" />
           </Switch>

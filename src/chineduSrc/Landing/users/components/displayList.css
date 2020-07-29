@@ -46,7 +46,7 @@
 .hero h1 {
     margin: 30px 0 10px 0;
     font-size: 48px;
-    font-weight: 700;
+    font-weight: 700px;
     line-height: 56px;
     text-transform: uppercase;
     color: #fff;
@@ -63,6 +63,10 @@
     color: #eee;
     margin-bottom: 50px;
     font-size: 24px;
+}
+
+.hero p {
+    color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -96,173 +100,76 @@
 
 /* nav stuff */
 
-.nav-menu,
-.nav-menu * {
-    margin: 0;
-    padding: 0;
+.jamal-links {
     list-style: none;
-}
-
-.nav-menu ul {
-    position: absolute;
-    display: none;
-    top: 100%;
-    left: 0;
-    z-index: 99;
-}
-
-.nav-menu li {
-    position: relative;
-    white-space: nowrap;
-}
-
-.nav-menu>li {
-    float: center;
-}
-
-.nav-menu li:hover>ul,
-.nav-menu li.sfHover>ul {
-    display: block;
-}
-
-.nav-menu ul ul {
-    top: 0;
-    left: 100%;
-}
-
-.nav-menu ul li {
-    min-width: 1px;
-}
-
-
-/* Nav Menu Arrows */
-
-.sf-arrows .sf-with-ul {
-    padding-right: 30px;
-}
-
-.sf-arrows .sf-with-ul:after {
-    content: "\f107";
-    position: absolute;
-    right: 15px;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-}
-
-.sf-arrows ul .sf-with-ul:after {
-    content: "\f105";
-}
-
-
-/* Nav Meu Container */
-
-.nav-menu-container {
-    float: right;
-    margin: 0;
-}
-
-@media (max-width: 768px) {
-    .nav-menu-container {
-        display: none;
-    }
-}
-
-
-/* Nav Meu Styling */
-
-.nav-menu logo {
-    padding: 0 8px 10px 8px;
-    text-decoration: none;
-    display: inline-block;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-    font-size: 5px;
-    outline: none;
-}
-
-.nav-menu>li {
-    margin-left: 10px;
-}
-
-.nav-menu>li>logo:before {
-    content: "";
-    position: absolute;
+    margin: 50px;
+    padding-top: 80%;
     width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #2dc997;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.nav-menu logo:hover:before,
-.nav-menu li:hover>a:before,
-.nav-menu .menu-active>a:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
+.jamal-links li {
+    margin-bottom: 40rem;
+    padding-top: 5rem;
 }
 
-.nav-menu ul {
-    margin: 4px 0 0 0;
-    border: 1px solid #e7e7e7;
+.jamal-links a {
+    border: 1px solid transparent;
+    color: #292929;
+    text-decoration: none;
+    padding: 0.5rem;
 }
 
-.nav-menu ul li {
-    background: #fff;
+.jamal-links a:hover,
+.jamal-links a:active,
+.jamal-links a.active {
+    background: #f7f5e4;
+    border-color: #292929;
+    color: #292929;
 }
 
-.nav-menu ul li:first-child {
-    border-top: 0;
-}
-
-.nav-menu ul li logo {
-    padding: 10px;
-    color: #333;
-    transition: 0.3s;
-    display: block;
-    font-size: 13px;
-    text-transform: none;
-}
-
-.nav-menu ul li logo:hover {
-    background: #2dc997;
-    color: #fff;
-}
-
-.nav-menu ul ul {
-    margin: 0;
-}
-
-
-/* Mobile Nav Toggle */
-
-#mobile-nav-toggle {
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 999;
-    margin: 20px 20px 0 0;
-    border: 0;
-    background: none;
-    font-size: 24px;
-    display: none;
-    transition: all 0.4s;
-    outline: none;
+.jamal-links img {
     cursor: pointer;
+    border: 1px solid #292929;
+    color: #292929;
+    background: transparent;
+    padding: 0.5rem;
+    font: inherit;
 }
 
-#mobile-nav-toggle i {
-    color: #fff;
+.nav-links button:focus {
+    outline: none;
 }
 
-@media (max-width: 768px) {
-    #mobile-nav-toggle {
-        display: inline;
+.jamal-links button:hover,
+.jamal-links button:active {
+    background: #292929;
+    color: rgb(39, 27, 211);
+}
+
+@media (min-width: 768px) {
+    .jamal-links {
+        flex-direction: row;
+    }
+    .jamal-links li {
+        margin: 0 0.5rem;
+    }
+    .jamal-links a {
+        color: white;
+        text-decoration: none;
+    }
+    .jamal-links button {
+        border: 1px solid white;
+        color: white;
+        background: transparent;
+    }
+    .jamal-links button:hover,
+    .jamal-links button:active {
+        background: #cccbc4;
+        color: #292929;
     }
 }

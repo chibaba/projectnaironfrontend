@@ -1,6 +1,6 @@
 import React from "react";
 
-import DisplayItem from "./displayItem";
+// import DisplayItem from "./displayItem";
 
 import "./displayList.css";
 
@@ -16,7 +16,7 @@ const DisplayList = (props) => {
     <div className="hero">
       <section className="hero">
         <div className="hero-container">
-          <h2>Generate Demand for your</h2>
+          <h1>Generate Demand for your</h1>
           <h2>Products and Services</h2>
           <p>We help advertisers connect to their target customers</p>
           <p>across multiple platforms anytime - anywhere</p>
@@ -34,68 +34,72 @@ const DisplayList = (props) => {
               />
             </div>
           </div>
-          <a href="#about" className="btn-get-started">
+          <a href="/" className="btn-get-started">
             Get Started
           </a>
         </div>
-        <nav id="nav-menu-container">
-          <ul className="nav-menu">
-            <li>
-              <img
-                src={logo1}
-                className="logo"
-                height="50px"
-                width="55px"
-                alt="instagram"
-              />
-            </li>
-            <li>
-              <img
-                src={logo2}
-                className="logo"
-                height="50px"
-                width="55px"
-                alt="facebook"
-              />
-            </li>
-            <li>
-              <img
-                src={logo3}
-                className="logo"
-                height="50px"
-                width="55px"
-                alt="time"
-              />
-            </li>
-            <li>
-              <img
-                src={logo4}
-                className="logo"
-                height="50px"
-                width="55px"
-                alt="twitter"
-              />
-            </li>
-            <li>
-              <img
-                src={logo5}
-                className="logo"
-                height="50px"
-                width="55px"
-                alt="google"
-              />
-            </li>
-            <li>
-              <img
-                src={logo6}
-                className="logo"
-                height="50px"
-                width="55px"
-                alt="Linked in"
-              />
-            </li>
-          </ul>
-        </nav>
+        <ul className="jamal-links">
+          <li>
+            <img
+              src={logo1}
+              className="logo"
+              height="50px"
+              width="55px"
+              alt="instagram"
+            />
+            {/* <NavLink to="/">English</NavLink> */}
+          </li>
+          <li>
+            <img
+              src={logo2}
+              className="logo"
+              height="50px"
+              width="55px"
+              alt="facebook"
+            />
+            {/* <NavLink to="/ui/news">Get A Gift</NavLink> */}
+          </li>
+          <li>
+            <img
+              src={logo3}
+              className="logo"
+              height="50px"
+              width="55px"
+              alt="time"
+            />
+            {/* <NavLink to="/Login">Login</NavLink> */}
+          </li>
+          <li>
+            <img
+              src={logo4}
+              className="logo"
+              height="50px"
+              width="55px"
+              alt="twitter"
+            />
+            {/* <NavLink to="/signup">Create Account</NavLink> */}
+          </li>
+          <li>
+            <img
+              src={logo5}
+              className="logo"
+              height="50px"
+              width="55px"
+              alt="google"
+            />
+            {/* <NavLink to="/signup">Create Account</NavLink> */}
+          </li>
+          <li>
+            <img
+              src={logo6}
+              className="logo"
+              height="50px"
+              width="55px"
+              alt="Linked in"
+            />
+            {/* <NavLink to="/signup">Create Account</NavLink> */}
+          </li>
+        </ul>
       </section>
     </div>
   );

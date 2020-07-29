@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import MainHeader from "./MainHeader";
-import NavLinks from "./NavLinks";
+import NavLinks from "./Navlink";
 import SideDrawer from "./SideDrawer";
 
 import "./MainNavigation.css";
@@ -39,7 +39,7 @@ const MainNavigation = (props) => {
           <span />
         </button>
         <h1 className="main-navigation__title">
-          <Link to="/  ">Your News</Link>
+          <Link to="/  ">YConnector</Link>
         </h1>
         <nav className="main-navigation__header-nav">
           <NavLinks />

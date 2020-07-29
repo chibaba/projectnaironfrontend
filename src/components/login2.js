@@ -17,8 +17,14 @@ import "react-phone-input-2/lib/bootstrap.css";
 //import ReactPhoneInput from "react-phone-input-2";
 import DropdownExampleSearchDropdown from "./dropdown";
 import "../Design/SignIn.css";
+
 import googleicon from "../img/Group 53.png";
 import facebooklogo from "../img/Group 50.png";
+
+import googleicon from "../img/googleicon.png";
+import facebooklogo from "../img/alaajo-facebook.png";
+import naironlogo from "../img/Vector.png";
+
 
 import { connect } from "react-redux";
 import { userActions } from "../_actions";
@@ -159,7 +165,7 @@ class SignIn extends React.Component {
               <div>
                 <Avatar
                   className={classes.avatar}
-                  src={naironLogo}
+                  src={naironlogo}
                   variant="square"
                 >
                   {/* <LockOutlinedIcon /> */}
@@ -175,7 +181,7 @@ class SignIn extends React.Component {
               >
                 <CssBaseline />
                 <div className={classes.paper}>
-                  <Typography component="h1" variant="h4">
+                  <Typography component="h1" variant="h5">
                     Log in to your account
                   </Typography>
                   {/* <Typography component="label" variant="p">
@@ -196,7 +202,7 @@ class SignIn extends React.Component {
                       }}
                     >
                       <div>
-                        <div
+                        {/* <div
                           style={{
                             position: "absolute",
                             paddingTop: 12,
@@ -208,7 +214,7 @@ class SignIn extends React.Component {
                             src={googleicon}
                             className={classes.small}
                           ></Avatar>
-                        </div>
+                        </div> */}
 
                         <BootstrapButton
                           type="submit"
@@ -221,7 +227,7 @@ class SignIn extends React.Component {
                         </BootstrapButton>
                       </div>
                       <div style={{ paddingTop: 20, paddingBottom: 10 }}>
-                        <div
+                        {/* <div
                           style={{
                             position: "absolute",
                             paddingTop: 12,
@@ -234,7 +240,7 @@ class SignIn extends React.Component {
                             src={facebooklogo}
                             className={classes.small}
                           ></Avatar>
-                        </div>
+                        </div> */}
                         <BootstrapButton
                           type="submit"
                           variant="outlined"
@@ -320,7 +326,7 @@ class SignIn extends React.Component {
                             variant="contained"
                             // color="primary"
                             style={{
-                              backgroundColor: "#B670D3",
+                              backgroundColor: "#7EB1D8",
                               border: "none",
                               color: "white",
                             }}
@@ -376,7 +382,10 @@ class SignIn extends React.Component {
               </Container>
             </div>
           </Container>
-          <footer className={classes.footer}>
+          <footer
+            className={classes.footer}
+            style={{ backgroundColor: "transparent" }}
+          >
             {/* <Grid container spacing={3}>
               <Grid item xs={9}>
                 <p>Privacy Policy</p>

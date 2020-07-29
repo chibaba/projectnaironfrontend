@@ -17,6 +17,7 @@ import { connect } from "react-redux";
 import sign from "./components/SignUp2";
 import log from "./components/login2";
 import User from "./chineduSrc/Landing/users/pages/Users";
+import MainNavigation from "./chineduSrc/Landing/Navigation/MainNavigation";
 
 class App extends Component {
   // state = {  }
@@ -61,13 +62,16 @@ class App extends Component {
           <div className={`alert ${alert.type}`}>{alert.message}</div>
         )}
         <Router history={history}>
-          <Switch>
-            <PrivateRoute exact path="/" component={HomePage} />
-            <Route path="/login" component={log} />
-            <Route path="/User" component={User} />
-            <Route path="/signup" component={sign} />
-            <Redirect from="*" to="/" />
-          </Switch>
+          <MainNavigation />
+          <main>
+            <Switch>
+              <PrivateRoute exact path="/" component={HomePage} />
+              <Route path="/login" component={log} />
+              <Route path="/User" component={User} />
+              <Route path="/signup" component={sign} />
+              <Redirect from="*" to="/" />
+            </Switch>
+          </main>
         </Router>
       </div>
     );
